@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed | LinkedIn </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="Index.html" class="logo"><img src="/images/logo.png"></a>
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a class="active-link" href="Index.html"><img src="/images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="/images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="/images/job1.png"> <span> Jobs </span></a></li>
+                <li><a href="#"><img src="/images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="/images/notification.png"><span>Notification</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img class="nav-profile-img" src="images/user-1.png" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- ________________________PROFILE DROP DOWN MENU________________________ -->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Pradip Sonawane</h3>
+                        <a href="Profile.html"> See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span> > </span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Setting & Privacy </p>
+                    <span> > </span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support </p>
+                    <span> > </span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility </p>
+                    <span> > </span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span> > </span>
+                </a>
+
+
+
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!-- --------------------navbar close..----------------.. -->
+
+    <div class="container">
+
+
+
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover-pic.png">
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.png">
+                   
+                   <a href="https://www.linkedin.com/in/thepradip/">
+                       <h1>Pradip Sonawane</h1>
+                   </a>
+                    <p align="center" class="suma">Full Stack Java Developer || Java Developer || HTML, CSS, JavaScript,Typescript, Java,
+                        Hibernate, JDBC, Spring, Spring boot, Angular & MySQL Database.</p>
+                    <ul>
+                        <li>Your profile views <span> 156 </span> </li>
+                        <li>Impression of your post <span> 1383 </span> </li>
+                    </ul>
+
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="images/items.png">My Items</a>
+                    <a href="#"><img src="images/premium.png">Try Premium</a>
+                </div>
+            </div>
+
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>Recent</h3>
+                <a href="#"> <img src="/images/recent.png">Web Developement</a>
+                <a href="#"> <img src="/images/recent.png">User Interface</a>
+                <a href="#"> <img src="/images/recent.png">Online Learing</a>
+                <a href="#"> <img src="/images/recent.png">learn Online</a>
+                <a href="#"> <img src="/images/recent.png">Code Better</a>
+                <a href="#"> <img src="/images/recent.png">Group Learning</a>
+
+                <h3>GROUP</h3>
+                <a href="#"> <img src="/images/group.png">Web Designing Group</a>
+                <a href="#"> <img src="/images/group.png">HTML $ CSS Learners</a>
+                <a href="#"> <img src="/images/group.png">Java Full Stack Developers</a>
+                <a href="#"> <img src="/images/group.png">Learn Coding Online</a>
+
+                <h3>HASHTAG</h3>
+                <a href="#"> <img src="/images/hash-tag.png">webdevelopement</a>
+                <a href="#"> <img src="/images/hash-tag.png">userinterface</a>
+                <a href="#"> <img src="/images/hash-tag.png">onlinelearning</a>
+
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+
+                </div>
+            </div>
+            <p id="showmorelink" onclick="toggleActivity()"> Show more <b>+</b></p>
+
+        </div>
+
+        <!-- _______________  Main-Content__________________ -->
+
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="/images/user-1.png">
+                    <textarea rows="2" placeholder="Write a post" type="text" id="txt"></textarea>
+                </div>
+                <div class="create-post-link">
+                    <li><img src="/images/photo.png">Photo</li>
+                    <li><img src="/images/video.png">Video</li>
+                    <li><img src="/images/jobs.png">Job</li>
+                    <li><img src="/images/copywriting.png">Write Article</li>
+                    <!-- <li>Post</li> -->
+
+                </div>
+
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+            </div>
+
+            <!-- __________________FIRST POST _________________________ -->
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Vineeta Singh</h1>
+                        <small>CEO at SUGAR Cosmetic </small>
+                        <small> 2 hours ago </small>
+                    </div>
+                </div>
+                <p> I was such an idealist in my 20s and 30s were the more about self preservation, but as I begin my
+                    fifth decade on earth, I plan to enjoy life’s beautiful contradictions without being uncomfortable
+                    with the grey (no pun intended!) For instance,
+                <p>1. You can age gracefully while being forever young </p>
+                <p> 2. You can be grateful for how far you’ve come while continuing to be fiercely ambitious </p>
+                <p> 3. You can have infinite self belief along with the hunger to grow everyday </p>
+                <p> 4. You can be impatient about the process but patient about the outcomes </p>
+                <p> 5. You can be deeply spiritual while obsessing with materialistic metrics like profitability, return
+                    on investment etc. </p>
+                <p> 6. You can seek wealth to have more freedom but also to make other people’s dreams come true </p>
+                <p> 7. You can put your family first but ensure it’s never at the cost of your own well being </p>
+                <p> 8. You can have friends like family but still be the happiest in your own company </p>
+                <p> 9. You can have ambitious goals, delay gratification but still enjoy the small moments and celebrate
+                    the silliest of milestones </p>
+                <p> 10. You can have the discipline to be hard on yourself while also remembering to not take yourself
+                    too seriously </p>
+                <p> 11. You can remember that you’re a tiny speck in the universe and what you do won’t matter in the
+                    larger scheme of things but still feel grateful to have the ability to make a difference to those
+                    around you and try to leave the world a better place when you go :) </p>
+
+                That all of the above can coexist in perfect harmony - is something I’ve figured only recently and
+                hence, age and wisdom have some correlation for me. So, as my mom wished me yesterday, let’s dive into
+                another decade of exploring, experimenting, experiencing and evolving ❤️
+                </p>
+                <img class="post-imgs" src="images/post-image-1.png">
+
+                <div class="post-stats">
+
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-user"> Pradip Sonawane and 18,087 others</span>
+                    </div>
+
+                    <div>
+
+                        <span>378 comments &middot; 113 shares </span>
+                    </div>
+
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-avtivity-user-icon">
+                        <img src="images/down-arrow.png" class="post-avtivity-arrow-icon">
+                    </div>
+                    <div class="post-activiti-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/share.png">
+                        <span>Repost</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- __________________SECOND POST _________________________ -->
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-2.png">
+                    <div>
+                        <h1>Aman Gupta </h1>
+                        <small>Co Founder and CMO at boAt Lifestyle (Hiring at all Levels) </small>
+                        <small>3 hours ago </small>
+                    </div>
+                </div>
+                <p>They say Rome wasn’t built in a Day,
+                    and I say India won’t make in a Day.
+
+                    Even when Suzuki came to India, an ecosystem of component manufacturers was developed with time,
+                    that complemented eachother to collectively grow. We need the Semiconductor giants to start making
+                    in India so companies like us are truly able to make in India for the world. 🇮🇳
+
+                    At SemiconIndia 2023 in Gandhinagar, it was a pleasure sharing the vision about how brands like ours
+                    will also benefit and give back more when this ecosystem is developed.
+
+                    Our dream of making world class tech products in India and self reliance in the tech industry is
+                    just getting fueled.
+
+                    🇮🇳🇮🇳
+                </p>
+                <img class="post-imgs" src="images/post-image-2.png" width="100%">
+
+                <div class="post-stats">
+
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-user"> Pradip Sonawane and 11,864 others</span>
+                    </div>
+
+                    <div>
+
+                        <span>182 comments &middot; 48 shares </span>
+                    </div>
+
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-avtivity-user-icon">
+                        <img src="images/down-arrow.png" class="post-avtivity-arrow-icon">
+                    </div>
+                    <div class="post-activiti-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- __________________Third POST _________________________ -->
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.png">
+                    <div>
+                        <h1>Ravindra Jadeja</h1>
+                        <small>Indian Cricketer at Board Of Control For Cricket In India (Bcci)</small>
+                        <small>4 hours ago </small>
+                    </div>
+                </div>
+                <p>After a successful surgery, I am back on my road to recovery. The goal remains to take things one
+                    step at a time in my goal to attaining full fitness. I look forward to getting fit once again and
+                    being back on the pitch, doing what I love.
+                </p>
+                <img class="post-imgs" src="images/post-image-3.png" width="100%">
+
+                <div class="post-stats">
+
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-user"> Pradip Sonawane and 26,753 others</span>
+                    </div>
+
+                    <div>
+
+                        <span>1022 comments &middot; 500 shares </span>
+                    </div>
+
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-avtivity-user-icon">
+                        <img src="images/down-arrow.png" class="post-avtivity-arrow-icon">
+                    </div>
+                    <div class="post-activiti-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- __________________Forth POST _________________________ -->
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h1>Dr.Vivek Bindra</h1>
+                        <small>Founder & CEO BadaBusiness.com | Motivational Speaker | Business Coach</small>
+                        <small>5 hours ago </small>
+                    </div>
+                </div>
+                <p>श्रीकृष्ण कहते हैं, सभी प्राणी भगवान का ही अंश है
+                </p>
+                <img class="post-imgs" src="images/post-image-4.png" width="100%">
+
+                <div class="post-stats">
+
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-user"> Pradip Sonawane and 133 others</span>
+                    </div>
+
+                    <div>
+
+                        <span>4 comments &middot; 200 shares </span>
+                    </div>
+
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-avtivity-user-icon">
+                        <img src="images/down-arrow.png" class="post-avtivity-arrow-icon">
+                    </div>
+                    <div class="post-activiti-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+
+                    <div class="post-activiti-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- _______________  Right-sidebar __________________ -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon">
+                <h3>Treding News</h3>
+
+                <a href="#"> High Demand for Skilled Manpower</a>
+                <span>1d ago &middot; 10,934,readers </span>
+
+                <a href="#"> Careers Growing Horizontally too</a>
+                <span>1d ago &middot; 10,934,readers </span>
+
+                <a href="#"> Less work Visa for sUS, More for UK</a>
+                <span>1d ago &middot; 10,934,readers </span>
+
+                <a href="#"> More Hiring = Higher Confidence ?</a>
+                <span>1d ago &middot; 10,934,readers </span>
+
+                <a href="#"> Gautam Adani is the World's third Reaches</a>
+                <span>1d ago &middot; 10,934,readers </span>
+
+                <a href="#" class="read-more-link"> Read more </a>
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot;&middot;&middot; </small>
+                <p>Master the 5 Principle of Web Design</p>
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/logo.png">
+                </div>
+                <b> Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link"> Learn More</a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About </a>
+                <a href="#">Accessibility </a>
+                <a href="#">Help Center </a>
+                <a href="#">Privacy Policy </a>
+                <a href="#">Adversting </a>
+                <a href="#">Get the App </a>
+                <a href="#">More </a>
+                <div class="copyright-msg">
+                    <img src="images/logo.png">
+                    <p> Linkedin Corporation &#169; 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu")
+        }
+
+        let sidebarActivity = document.getElementById("sidebarActivity");
+        let morelink = document.getElementById("showmorelink");
+
+        function toggleActivity() {
+            sidebarActivity.classList.toggle("open-activity");
+
+
+            if (sidebarActivity.classList.contains("open-activity")) {
+                morelink.innerHTML = "Show less <b>-</b>";
+            }
+            else {
+
+                morelink.innerHTML = "Show more <b>+</b>";
+            }
+
+        }
+
+
+    </script>
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>

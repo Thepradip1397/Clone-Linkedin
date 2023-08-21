@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- _________________________________Navbar Start________________________________________________ -->
+
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="Index.html" class="logo"><img src="/images/logo.png"></a>
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a class="active-link" href="Index.html"><img src="/images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="/images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="/images/jobs.png"> <span> Job </span></a></li>
+                <li><a href="#"><img src="/images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="/images/notification.png"><span>Notification</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img class="nav-profile-img" src="images/user-1.png" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- ________________________PROFILE DROP DOWN MENU________________________ -->
+
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Pradip Sonawane</h3>
+                        <a href="Profile.html"> See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span> > </span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Setting & Privacy </p>
+                    <span> > </span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support </p>
+                    <span> > </span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility </p>
+                    <span> > </span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span> > </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- _________________________________Navbar Close____________________________________ -->
+
+
+    <div class="container">
+
+        <!-- _____________________ PROFILE MAIN ___________________________ -->
+        <div class="profile-main">
+            <div class="profile-container">
+                <img class="cover-imgs" src="images/cover-pic.png" width="100%">
+                <div class="profile-container-inner">
+                    <img src="images/user-1.png" class="profile-pic">
+                    <h1>Pradip Sonawane</h1>
+                    <b>Java Full Stack Developer|HTML,CSS,JavaScript,
+                    </b> 
+                    <br>  
+                    |Angular,Spring,Springboot,Hibernate,JDBC,JSP|SQL,MySQL. 
+                    </br>
+                    <p>Shahada, India &middot; <a href="#">Contact info </a></p>
+                    <div class="mutual-connection">
+                        <img src="images/user-2.png">
+                        <span>1 Mutual Connection : Narendra modi</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn1">Open to</a>
+                        <a href="#" class="primary-btn2">Add profile section </a>
+                        <a href="#" class="primary-btn3">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>Envisaging my abilities to put consistent hard work and systemic effort towards efficacy.
+                    I aspire putting the entire arsenal of my skills and capabilities to channelize the prodigious
+                    growth of the organization and myself.
+
+                    'Pervasive Ideas and Profuse hard work 'the currency of present', facilitates the organic growth'.
+                </p>
+                <a href="#" class="see-more-link">See more...</a>
+            </div>
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="images/microsoft.png" alt="">
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <b> Microsoft &middot; Full-time </b>
+                        <b> Feb 2021 - Present &middot; 1.5 years </b>
+                        <p>
+                            Computer programming is the process of performing a particular
+                            computation, usually by designing and building an executable computer
+                            program.
+                        </p>
+                        <hr>
+
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="images/slack.png" alt="">
+                    <div>
+                        <h3>Full Stack Developer</h3>
+                        <b> Slack &middot; Full-time </b>
+                        <b> June 2018 - Jan 2021 &middot; 2.6 years </b>
+                        <p>
+                            Computer programming is the process of performing a particular
+                            computation, usually by designing and building an executable computer
+                            program.
+                        </p>
+                        <hr>
+
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="images/google.png" alt="">
+                    <div>
+                        <h3>Web Developer</h3>
+                        <b> Google Inc &middot; Full-time </b>
+                        <b> Sep 2015 - May 2018 &middot; 2.8 years </b>
+                        <p>
+                            Computer programming is the process of performing a particular
+                            computation, usually by designing and building an executable computer
+                            program.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="exp-link"> Show All 7 Experiences <img src="images/right-arrow.png"> </a>
+
+
+            </div>
+
+
+            <div class="profile-description">
+                <h2>Education
+                    <div class="profile-desc-row">
+                        <img src="images/stanford.png" alt="">
+                        <div>
+                            <h3>Stanford University</h3>
+                            <b>BSEE, Electrical Engineering</b>
+                            <b>2018 - 2022</b>
+                            <hr>
+
+                        </div>
+                    </div>
+
+                    <div class="profile-desc-row">
+                        <img src="images/north.png" alt="">
+                        <div>
+                            <h3>Norhtwestern University</h3>
+                            <b>Computer Engineering</b>
+                            <b>2015 - 2018</b>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="profile-desc-row">
+                        <img src="images/mit.png" alt="">
+                        <div>
+                            <h3>Harvard University</h3>
+                            <b>Senior Highschool</b>
+                            <b>2005 - 2015</b>
+                        </div>
+                    </div>
+                </h2>
+            </div>
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skill-btn">Leadership</a>
+                <a href="#" class="skill-btn">Web Designing</a>
+                <a href="#" class="skill-btn">Developement</a>
+                <a href="#" class="skill-btn">Communication</a>
+                <a href="#" class="skill-btn">UI/UX</a>
+                <a href="#" class="skill-btn">Planning</a>
+                <a href="#" class="skill-btn">Coding</a>
+                <a href="#" class="skill-btn">JavaScript</a>
+                <a href="#" class="skill-btn">Python</a>
+                <a href="#" class="skill-btn">Enterprenuorship</a>
+            </div>
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <a href="#" class="language-btn">English</a>
+                <a href="#" class="language-btn">Hindi</a>
+                <a href="#" class="language-btn">Marathi</a>
+            </div>
+        </div>
+
+
+        <!-- _____________________ PROFILE SIDEBAR ___________________________ -->
+        <div class="profile-sidebar">
+
+            <div class="sidebar-ad">
+                <small>Ad &middot;&middot;&middot; </small>
+                <p>Master the 5 Principle of Web Design</p>
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/logo.png">
+                </div>
+                <b> Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link"> Learn More</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="images/user-4.png">
+                    <div>
+                        <h2>Ravindra Jadeja</h2>
+                        <p>Indian Cricketer at Board of Control for Cricket in India (BCCI)</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h2>Vineeta Singh</h2>
+                        <p> CEO at SUGAR Cosmetic </p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-2.png">
+                    <div>
+                        <h2>Aman Gupta</h2>
+                        <p> Co Founder and CMO at boAt Lifestyle (Hiring at all Levels) </p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h2>Dr.Vivek Bindra</h2>
+                        <p> Founder & CEO BadaBusiness.com | Motivational Speaker | Business Coach </p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-6.jpeg">
+                    <div>
+                        <h2>K Krithivasan </h2>
+                        <p>CEO & MD at Tata Consultancy Services </p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="">
+        <div class="sidebar-useful-links">
+            <a href="#">About </a>
+            <a href="#">Accessibility </a>
+            <a href="#">Help Center </a>
+            <a href="#">Privacy Policy </a>
+            <a href="#">Adversting </a>
+            <a href="#">Get the App </a>
+            <a href="#">More </a>
+            <div class="copyright-msg">
+                <img src="images/logo.png">
+                <p> Linkedin Corporation &#169; 2023</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ___________________________________________Java Script ______________________________________________________ -->
+
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu")
+        }
+    </script>
+    <!-- ___________________________________________Java Script ______________________________________________________ -->
+
+
+
+
+</body>
+
+</html>
